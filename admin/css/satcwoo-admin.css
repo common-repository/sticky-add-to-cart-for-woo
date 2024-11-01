@@ -1,0 +1,219 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*===========================================================
+ *range slider css
+ *=========================================================
+*/
+input.inputRange1, input.inputRange2, input.inputRange3, input.inputRange4, input.inputRange5, input.inputRange6, input.inputRange7, input.inputRange8, input.inputRange9, input.inputRange10, input.inputRange11, input.inputRange12, input.inputRange13, input.inputRange14, input.inputRange15, input.inputRange16, input.inputRange17, input.inputRange18, input.inputRange19, input.inputRange20, input.inputRange21, input.inputRange22, input.inputRange23, input.inputRange24, input.inputRange25, input.inputRange26, input.inputRange27, input.inputRange28, input.inputRange29, input.inputRange30, input.inputRange31, input.inputRange32, input.inputRange33, input.inputRange34, input.inputRange35, input.inputRange36, input.inputRange37, input.inputRange38, input.inputRange39, input.inputRange40, input.inputRange41, input.inputRange42, input.inputRange43, input.inputRange44, input.inputRange45, input.inputRange46, input.inputRange47, input.inputRange48, input.inputRange49, input.inputRange50, input.inputRange51, input.inputRange52, input.inputRange53, input.inputRange54, input.inputRange55, input.inputRange56, input.inputRange57, input.inputRange58, input.inputRange59, input.inputRange60, input.inputRange61, input.inputRange62, input.inputRange63, input.inputRange64, input.inputRange65, input.inputRange66, input.inputRange67, input.inputRange68, input.inputRange69, input.inputRange70, input.inputRange71, input.inputRange72, input.inputRange73 {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    position:relative;
+    top:4px;
+}
+input.inputRange1:hover, input.inputRange2:hover, input.inputRange3:hover, input.inputRange4:hover, input.inputRange5:hover, input.inputRange6:hover, input.inputRange7:hover, input.inputRange8:hover, input.inputRange9:hover, input.inputRange10:hover, input.inputRange11:hover, input.inputRange12:hover, input.inputRange13:hover, input.inputRange14:hover, input.inputRange15:hover, input.inputRange16:hover, input.inputRange17:hover, input.inputRange18:hover, input.inputRange19:hover, input.inputRange20:hover, input.inputRange21:hover, input.inputRange22:hover, input.inputRange23:hover, input.inputRange24:hover, input.inputRange25:hover, input.inputRange26:hover, input.inputRange27:hover, input.inputRange28:hover, input.inputRange29:hover, input.inputRange30:hover, input.inputRange31:hover, input.inputRange32:hover, input.inputRange33:hover, input.inputRange34:hover, input.inputRange35:hover, input.inputRange36:hover, input.inputRange37:hover, input.inputRange38:hover, input.inputRange39:hover, input.inputRange40:hover, input.inputRange41:hover, input.inputRange42:hover, input.inputRange43:hover, input.inputRange44:hover, input.inputRange45:hover, input.inputRange46:hover, input.inputRange47:hover, input.inputRange48:hover, input.inputRange49:hover, input.inputRange50:hover, input.inputRange51:hover, input.inputRange52:hover, input.inputRange53:hover, input.inputRange54:hover, input.inputRange55:hover, input.inputRange56:hover, input.inputRange57:hover, input.inputRange58:hover, input.inputRange59:hover, input.inputRange60:hover, input.inputRange61:hover, input.inputRange62:hover, input.inputRange63:hover, input.inputRange64:hover, input.inputRange65:hover, input.inputRange66:hover, input.inputRange67:hover, input.inputRange68:hover, input.inputRange69:hover, input.inputRange70:hover, input.inputRange71:hover, input.inputRange72:hover, input.inputRange73:hover {
+    opacity: 1;
+}
+input.inputRange1::-webkit-slider-thumb, input.inputRange2::-webkit-slider-thumb, input.inputRange3::-webkit-slider-thumb, input.inputRange4::-webkit-slider-thumb, input.inputRange5::-webkit-slider-thumb, input.inputRange6::-webkit-slider-thumb, input.inputRange7::-webkit-slider-thumb, input.inputRange8::-webkit-slider-thumb, input.inputRange9::-webkit-slider-thumb, input.inputRange10::-webkit-slider-thumb, input.inputRange11::-webkit-slider-thumb, input.inputRange12::-webkit-slider-thumb, input.inputRange13::-webkit-slider-thumb, input.inputRange14::-webkit-slider-thumb, input.inputRange15::-webkit-slider-thumb, input.inputRange16::-webkit-slider-thumb, input.inputRange17::-webkit-slider-thumb, input.inputRange18::-webkit-slider-thumb, input.inputRange19::-webkit-slider-thumb, input.inputRange20::-webkit-slider-thumb, input.inputRange21::-webkit-slider-thumb, input.inputRange22::-webkit-slider-thumb, input.inputRange23::-webkit-slider-thumb, input.inputRange24::-webkit-slider-thumb, input.inputRange25::-webkit-slider-thumb, input.inputRange26::-webkit-slider-thumb, input.inputRange27::-webkit-slider-thumb, input.inputRange28::-webkit-slider-thumb, input.inputRange29::-webkit-slider-thumb, input.inputRange30::-webkit-slider-thumb, input.inputRange31::-webkit-slider-thumb, input.inputRange32::-webkit-slider-thumb, input.inputRange33::-webkit-slider-thumb, input.inputRange34::-webkit-slider-thumb, input.inputRange35::-webkit-slider-thumb, input.inputRange36::-webkit-slider-thumb, input.inputRange37::-webkit-slider-thumb, input.inputRange38::-webkit-slider-thumb, input.inputRange39::-webkit-slider-thumb, input.inputRange40::-webkit-slider-thumb, input.inputRange41::-webkit-slider-thumb, input.inputRange42::-webkit-slider-thumb, input.inputRange43::-webkit-slider-thumb, input.inputRange44::-webkit-slider-thumb, input.inputRange45::-webkit-slider-thumb, input.inputRange46::-webkit-slider-thumb, input.inputRange47::-webkit-slider-thumb, input.inputRange48::-webkit-slider-thumb, input.inputRange49::-webkit-slider-thumb, input.inputRange50::-webkit-slider-thumb, input.inputRange51::-webkit-slider-thumb, input.inputRange52::-webkit-slider-thumb, input.inputRange53::-webkit-slider-thumb, input.inputRange54::-webkit-slider-thumb, input.inputRange55::-webkit-slider-thumb, input.inputRange56::-webkit-slider-thumb, input.inputRange57::-webkit-slider-thumb, input.inputRange58::-webkit-slider-thumb, input.inputRange59::-webkit-slider-thumb, input.inputRange60::-webkit-slider-thumb, input.inputRange61::-webkit-slider-thumb, input.inputRange62::-webkit-slider-thumb, input.inputRange63::-webkit-slider-thumb, input.inputRange64::-webkit-slider-thumb, input.inputRange65::-webkit-slider-thumb, input.inputRange66::-webkit-slider-thumb, input.inputRange67::-webkit-slider-thumb, input.inputRange68::-webkit-slider-thumb, input.inputRange69::-webkit-slider-thumb, input.inputRange70::-webkit-slider-thumb, input.inputRange71::-webkit-slider-thumb, input.inputRange72::-webkit-slider-thumb, input.inputRange73::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #2196f3;
+    cursor: pointer;
+}
+input.inputRange1::-moz-range-thumb, input.inputRange2::-moz-range-thumb, input.inputRange3::-moz-range-thumb, input.inputRange4::-moz-range-thumb, input.inputRange5::-moz-range-thumb, input.inputRange6::-moz-range-thumb, input.inputRange7::-moz-range-thumb, input.inputRange8::-moz-range-thumb, input.inputRange9::-moz-range-thumb, input.inputRange10::-moz-range-thumb, input.inputRange11::-moz-range-thumb, input.inputRange12::-moz-range-thumb, input.inputRange13::-moz-range-thumb, input.inputRange14::-moz-range-thumb, input.inputRange15::-moz-range-thumb, input.inputRange16::-moz-range-thumb, input.inputRange17::-moz-range-thumb, input.inputRange18::-moz-range-thumb, input.inputRange19::-moz-range-thumb, input.inputRange20::-moz-range-thumb, input.inputRange21::-moz-range-thumb, input.inputRange22::-moz-range-thumb, input.inputRange23::-moz-range-thumb, input.inputRange24::-moz-range-thumb, input.inputRange25::-moz-range-thumb, input.inputRange26::-moz-range-thumb, input.inputRange27::-moz-range-thumb, input.inputRange28::-moz-range-thumb, input.inputRange29::-moz-range-thumb, input.inputRange30::-moz-range-thumb, input.inputRange31::-moz-range-thumb, input.inputRange32::-moz-range-thumb, input.inputRange33::-moz-range-thumb, input.inputRange34::-moz-range-thumb, input.inputRange35::-moz-range-thumb, input.inputRange36::-moz-range-thumb, input.inputRange37::-moz-range-thumb, input.inputRange38::-moz-range-thumb, input.inputRange39::-moz-range-thumb, input.inputRange40::-moz-range-thumb, input.inputRange41::-moz-range-thumb, input.inputRange42::-moz-range-thumb, input.inputRange43::-moz-range-thumb, input.inputRange44::-moz-range-thumb, input.inputRange45::-moz-range-thumb, input.inputRange46::-moz-range-thumb, input.inputRange47::-moz-range-thumb, input.inputRange48::-moz-range-thumb, input.inputRange49::-moz-range-thumb, input.inputRange50::-moz-range-thumb, input.inputRange51::-moz-range-thumb, input.inputRange52::-moz-range-thumb, input.inputRange53::-moz-range-thumb, input.inputRange54::-moz-range-thumb, input.inputRange55::-moz-range-thumb, input.inputRange56::-moz-range-thumb, input.inputRange57::-moz-range-thumb, input.inputRange58::-moz-range-thumb, input.inputRange59::-moz-range-thumb, input.inputRange60::-moz-range-thumb, input.inputRange61::-moz-range-thumb, input.inputRange62::-moz-range-thumb, input.inputRange63::-moz-range-thumb, input.inputRange64::-moz-range-thumb, input.inputRange65::-moz-range-thumb, input.inputRange66::-moz-range-thumb, input.inputRange67::-moz-range-thumb, input.inputRange68::-moz-range-thumb, input.inputRange69::-moz-range-thumb, input.inputRange70::-moz-range-thumb, input.inputRange71::-moz-range-thumb, input.inputRange72::-moz-range-thumb, input.inputRange73::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #2196F3;
+  cursor: pointer;
+}
+/*==========================
+ * position and rotate padding siders and fields
+ * ========================*/
+#field6,#field7  {
+    width: 60px;
+}
+.inputRange6 {
+    transform: rotate(270deg);
+    width: 60px !important;
+}
+.inputRange7 {
+    transform: rotate(90deg);
+    width: 60px !important;
+}
+.inputRange8,.inputRange9  {
+    width: 160px !important;
+}
+#field8,#field9 {
+    margin-top: 10px;
+}
+
+#field1,#field2,#field3,#field4,#field5,#field6,#field7,#field8,#field9,#field10,#field11 {
+	width:60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.quantity {
+  position: relative;
+}
+
+#field6 input[type=number]::-webkit-inner-spin-button,
+#field6 input[type=number]::-webkit-outer-spin-button,
+#field7 input[type=number]::-webkit-inner-spin-button,
+#field7 input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 45px;
+  height: 42px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  border: 1px solid #eee;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: relative;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  border-left: 1px solid #eee;
+  width: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 13px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+  line-height: 1.7;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  height: 50%;
+  top: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  bottom: -1px;
+  height: 50%;
+}*/

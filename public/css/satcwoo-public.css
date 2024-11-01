@@ -1,0 +1,130 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.inner .input-text.qty.text {
+    width: 80px !important;
+}
+
+/*==========================
+ * mini cart
+ * ========================*/
+.satc-cart .woocommerce-Price-amount.amount {
+    font-size: inherit !important;
+    font-weight: 900;
+}
+.satc-cart {
+	display:none;
+	transition:1s;
+	width: 260px;
+}
+.satc-cart table tr td {
+    padding: 0 5px !important;
+}
+/*.cart-contents:hover + .satc-cart {
+	display:block;
+	position:absolute;
+	right:0;
+	top:-60px;
+	background-color:#fff;
+}*/
+.woocommerce-page div.product form.cart div.quantity {
+	overflow:visible !important;
+}
+@media only screen and (max-width:768px){
+	.inner .input-text.qty.text {
+		width:60px !important;
+	}
+	.quant .quantity {
+    width: 40px;
+    width: 60px !important;
+    overflow: visible !important;
+}
+}
+
+a.cart-contents span.woocommerce-Price-amount.amount {
+    display: none !important;
+}
+
+/*===============================
+ * 
+ * default styles
+ * 
+ * ==============================*/
+.satc-simple-fixed-bar, #satc-fixed-bar-variations, .satc-cart table tbody tr td {
+	background-color:#f4f4f4;
+}
+img.satc-fixed-cart-image {
+	border-top-left-radius: 50px;
+	border-top-right-radius:50px;
+	border-bottom-left-radius:50px;
+	border-bottom-right-radius:50px;
+}
+.satc-fixed-stars span {
+	color: #ff0000;
+}
+.satc-fixed-add-to-cart-button,.single_add_to_cart_button2.button.alt,.sticky-button .single_add_to_cart_button.button.alt, #satc-fixed-bar-variations .single_add_to_cart_button.button.alt {
+	font-size: 20px;
+}
+.quant .input-text.qty.text, #satc-fixed-bar-variations .quant .input-text.qty.text, #satc-fixed-bar-variations .inner .sticky-button .quant .quantity {
+	height: 58px;
+}
+.satc-fixed-add-to-cart-button,.single_add_to_cart_button2.button.alt,.sticky-button .single_add_to_cart_button.button.alt{
+	padding-top:10px;
+	padding-right:10px;
+	padding-left:10px;
+	padding-bottom:10px;
+}
+.satc-fixed-add-to-cart-button,.single_add_to_cart_button2.button.alt,.sticky-button .single_add_to_cart_button.button.alt {
+	background-image: linear-gradient(#7c4bce, #7c4bce) !important;
+	transition: 0.3s;
+	font-family:inherit;
+	font-size: 20px;
+}
+.satc-fixed-add-to-cart-button:hover,.single_add_to_cart_button2.button.alt:hover,.sticky-button .single_add_to_cart_button.button.alt:hover {
+	background-image: linear-gradient(#5b2ea7, #5b2ea7) !important;
+	transition: 0.3s;
+}
+.satc-fixed-add-to-cart-button,.single_add_to_cart_button2.button.alt, .sticky-button .single_add_to_cart_button.button.alt {
+	color: #fff;
+}
+.satc-fixed-add-to-cart-button:hover,.single_add_to_cart_button2.button.alt:hover, .sticky-button .single_add_to_cart_button.button.alt:hover {
+	color: #fff;
+}
+.satc-product-title {
+	font-size: 28px;
+}
+.satc-product-title {
+	color: #2d2d2d;
+}
+.satc-simple-fixed-bar .woocommerce-Price-amount.amount, #satc-fixed-bar-variations .woocommerce-Price-amount.amount {
+	font-size: 28px;
+}
+.satc-simple-fixed-bar .woocommerce-Price-amount, #satc-fixed-bar-variations .woocommerce-Price-amount {
+	color: #2d2d2d;
+}
+.fas.fa-arrow-up, .fas.fa-arrow-down {
+    background-color: #f4f4f4;
+    border-color: #2d2d2d;
+    color: #2d2d2d;
+}
+.sticky-button {
+	max-width:300px;
+}
+/*=======================================
+ * added to cart view checkout link
+ * ====================================*/
+a.added-to-cart {
+    position: absolute;
+    width: calc(80% - 80px);
+    height: 50%;
+    align-items: center;
+}
+@media only screen and (max-width:600px){
+ a.added-to-cart {
+     position: absolute;
+     height: 35%;
+     align-items: center;
+     width: 100%;
+ }
+}
